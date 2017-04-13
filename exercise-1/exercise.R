@@ -21,6 +21,7 @@ unique(car1997$year)
 # Create a data.frame of 2-Wheel Drive vehicles that get more than 20 miles/gallon in the city
 wheel2<-vehicles[vehicles$drive=='2-Wheel Drive' & vehicles$cty>20,]
 
+
 # Of those vehicles, what is the vehicle ID of the vehicle with the worst hwy mpg?
 wheel2$make[wheel2$hwy == min(wheel2$hwy)]
 
@@ -36,3 +37,6 @@ compete<-function(year,make){
 # What was the most efficient honda model of 1995?
 compete(1995,'Honda')
 
+dim(vehicles)
+str(vehicles)
+colnames(vehicles)
